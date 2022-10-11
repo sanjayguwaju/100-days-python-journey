@@ -1,16 +1,25 @@
-# This is a sample Python script.
+#Don't change the code below
+print("Welcome to the Python Pizzas Deliveries!")
+size = input("What size do you want? S,M, or L \n")
+add_pepperoni = input("Do you want pepperoni? Y or N \n")
+extra_cheese = input("Do you want extra cheese? Y or N \n")
+#Don't change the code above
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+#Write code below this line
+bill = 0
+if size == "S":
+    bill += 15
+elif size == "M":
+    bill += 20
+else:
+    bill += 25
 
+if add_pepperoni == "Y":
+    if size == "S":
+        bill += 2
+    else:
+        bill += 3
+if extra_cheese == "Y":
+    bill += 1
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(f"Your final bill amount is ${bill}")
