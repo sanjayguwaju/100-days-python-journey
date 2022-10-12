@@ -1,16 +1,31 @@
-# This is a sample Python script.
+#Don't change the code below
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+#Don't change the code above
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+#Write your code below this line
+
+combined_string = name1 + name2
+lower_case_string = combined_string.lower()
+
+t = lower_case_string.count("t")
+r = lower_case_string.count("r")
+u = lower_case_string.count("u")
+e = lower_case_string.count("e")
+
+true = t + r + u + e
+
+l = lower_case_string.count("l")
+o = lower_case_string.count("o")
+v = lower_case_string.count("v")
+e = lower_case_string.count("e")
+
+love = l + o + v + e
+
+love_score = str(true) + str(love)
+
+print(f"Your love score is {love_score}%.")
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
